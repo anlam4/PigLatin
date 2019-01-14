@@ -31,11 +31,11 @@ public String pigLatin(String sWord)
 //precondition: sWord is a valid String of length greater than 0
 //postcondition: returns the pig latin equivalent of sWord
 {
-	int firstVowel = findFirstVowel(sWord);
+  int firstVowel = findFirstVowel(sWord);
   if(firstVowel == -1) {
     return sWord + "ay";
   }
-	else if(firstVowel == 0) {
+  else if(firstVowel == 0) {
     return sWord + "way";
   }
   else if(sWord.substring(0,2).equals("qu")) {
